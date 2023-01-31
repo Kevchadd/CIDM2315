@@ -1,0 +1,14 @@
+namespace q3;
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Please input a year :");
+       string year = Console.ReadLine();
+        int a = Convert.ToInt16(year);
+       if((a%4==0)&&((a%100)!=0))
+       {Console.WriteLine(a +" is a leap year");}  
+       else{Console.WriteLine(a +" is not a leap year");} 
+
+    }
+}
