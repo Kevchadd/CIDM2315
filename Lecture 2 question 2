@@ -1,0 +1,36 @@
+namespace newQ2;
+class Program
+{
+    static void Main(string[] args)
+    {
+Console.WriteLine("Please input the first num:");
+    string First_Num = Console.ReadLine(); 
+    int n1 = Convert.ToInt16(First_Num);
+
+Console.WriteLine("Please input the second num:");
+    string Sec_Num = Console.ReadLine();
+    int n2 = Convert.ToInt16(Sec_Num);
+
+Console.WriteLine("Please input the third num:");
+    string Thir_Num = Console.ReadLine();
+     int n3 = Convert.ToInt16(Thir_Num);
+
+    
+    if(n1<n2)
+        {
+            if(n1<n3)
+        {Console.WriteLine("smallest value is: " + n1);}
+            
+            else{Console.WriteLine("smallest value is: " + n3);}}
+
+        else{
+            if(n2<n3){Console.WriteLine("smallest value is: " + n2);}
+        
+        else{Console.WriteLine("smallest value is: " + n3);}
+        }
+
+
+      
+    }       
+
+    }
