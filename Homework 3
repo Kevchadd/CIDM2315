@@ -1,0 +1,71 @@
+
+    static void Main(string[] args)
+    {
+        Console.WriteLine("----Q1-----");
+        //dispay if prime or not
+        Console.WriteLine("Input an integer:");
+        int n1 = Convert.ToInt16(Console.ReadLine());
+        int counter = 0;
+       // check if there are new factor between [2, n1-1]
+        for(int p = 2; p <= n1-1; p++)
+        {
+            if (n1 % p ==0)
+            {
+               counter++;
+            }
+        }
+            
+        if(counter >0){
+            Console.WriteLine("N is non-prime");
+        }
+        else{
+            Console.WriteLine("N is prime");
+        }
+    }
+
+
+static void Main(string[] args)
+    {
+        Console.WriteLine("----Q2-----");
+        //Print square pattern
+        Console.WriteLine("Assign an int value to N:");
+        int numb = Convert.ToInt16(Console.ReadLine());
+        for( int row = 0; row<numb; row++){
+            for(int col= 0; col<numb; col++){
+                Console.Write("#");
+            }
+            Console.WriteLine("");
+        }
+
+ {
+        Console.WriteLine("----Q3-----");
+        //Print square pattern
+        Console.WriteLine("Assign an int value to N:");
+        int numb = Convert.ToInt16(Console.ReadLine());
+        for(int row=0; row<numb; row++){
+            for(int col=0; col<numb; col++){
+                if(row>=col)Console.Write("*");}
+            Console.WriteLine("");
+
+            }
+    
+        }
+        
+        Console.WriteLine("----bonus-----");
+        //Print square pattern
+        Console.WriteLine("Assign an int value to N:");
+        int numb = Convert.ToInt16(Console.ReadLine());
+        int count=1;
+        for(int row=0; row<=numb; row++){
+            for(int col=0; col<=numb; col++){
+            Console.Write(" ");
+         }
+            for(count=1; count<=row;count++){
+            Console.Write (row);
+
+            }
+            Console.WriteLine();
+    
+          } 
+    
+          } 
