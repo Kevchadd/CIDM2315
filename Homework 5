@@ -63,22 +63,37 @@ static int Largest( int a, int b)
 
 
 
-
 class Program{
 
     static void Main (string[] args)
+    {
+        createAccount();
+
+    }
+
+    static bool checkAge(int birth_year){
+    int age = (2023-birth_year);
+
+    if (age>=18){return true;}
+    else{return false;}
+    }
+
+    static void createAccount()   
     {
         Console.WriteLine("Enter your Username : ");
         String user_name = Console.ReadLine();
         Console.WriteLine("Enter your Password : ");
         String pass_word = Console.ReadLine();
         Console.WriteLine("Enter your Password Again: ");
-        //Check if password is correct
-        //String pass_word = Console.ReadLine();
+        String pass_word2 = Console.ReadLine();
         Console.WriteLine("Enter your Birthyear : ");
         int birth_year = Convert.ToInt32(Console.ReadLine());
+        if(checkAge(birth_year)){
+            if(pass_word==pass_word2){Console.WriteLine("Account is created succesfully");}
+            else{Console.WriteLine("Wrong password");}} 
+        else{Console.WriteLine("Could not create an account");}
+
+        }
 
 
-}
-     
 }
