@@ -1,62 +1,85 @@
 class Program{
 
-    static void Main (string[] args)
-    {
-int a = Convert.ToInt32(Console.ReadLine());
-int b = Convert.ToInt32(Console.ReadLine());
-input (a,b);
-int large = Largest (a,b);
-
-Console.WriteLine("The Largest number is: "+ large );
+    static void Main()
+{
+	int a = Convert.ToInt32(Console.ReadLine());
+	int b = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("a = "+a+"; b="+b);
+	
+	int large = Largest (a,b);
+    
+	Console.WriteLine("The Largest number is: "+ large );
 }
 
-static void input (int a, int b)
+//Question1's method
+static int Largest( int a, int b)
 {
-   
-        Console.WriteLine("a = "+a+"; b="+b);}
-static int Largest (int a, int b)
-{
-    if (a>b) { return a;} 
-    else{return b;}
+    if (a>b) { 
+    	return a;
+    }
+    else{
+    	return b;
+    }
 }
-   
      
 }
+
+
+
+
+class Program{
+
+    static void Main()
+{
+	int a = Convert.ToInt32(Console.ReadLine());
+	int b = Convert.ToInt32(Console.ReadLine());
+    int c = Convert.ToInt32(Console.ReadLine());
+	int d = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("a = "+a+"; b="+b+"; c = "+c+"; d="+d+";");
+	
+	int large = Q2Largest (a,b,c,d);
+    
+	Console.WriteLine("The Largest number is: "+ large );
+}
+
+//Question1's method
+static int Largest( int a, int b)
+{
+    if (a>b) { 
+    	return a;
+    }
+    else{
+    	return b;
+    }
+}
+    static int Q2Largest (int a,int b, int c, int d)
+     {
+        int max1 = Largest(a,b);
+        int max2 = Largest(c,d);
+
+        int large = Largest(max1,max2);
+        return large;
+     }
+}
+
+
+
 
 class Program{
 
     static void Main (string[] args)
     {
-int a = Convert.ToInt32(Console.ReadLine());
-int b = Convert.ToInt32(Console.ReadLine());
-int c = Convert.ToInt32(Console.ReadLine());
-int d = Convert.ToInt32(Console.ReadLine());
-input (a,b,c,d);
-int max1= Largestf (a,b);
-int max2= Largests (c,d);
+        Console.WriteLine("Enter your Username : ");
+        String user_name = Console.ReadLine();
+        Console.WriteLine("Enter your Password : ");
+        String pass_word = Console.ReadLine();
+        Console.WriteLine("Enter your Password Again: ");
+        //Check if password is correct
+        //String pass_word = Console.ReadLine();
+        Console.WriteLine("Enter your Birthyear : ");
+        int birth_year = Convert.ToInt32(Console.ReadLine());
 
-int large = Largest (max1,max2);
-Console.WriteLine("The Largest number is: "+ large );
-    }
 
-static void input (int a, int b, int c, int d)
-{
-   
-        Console.WriteLine("a = "+a+" b="+b +" c = "+c+" d="+d);}
-static int Largestf (int a, int b)
-{
-    if (a>b) { return a;} 
-    else{return b;}
-}
-  static int Largests ( int c, int d)
-{
-    if (c>d) { return c;} 
-    else{return d;}
-} 
-static int Largest (int max1, int max2)
-{
-    if (max1>max2) { return max1;} 
-    else{return max2;}
 }
      
 }
