@@ -41,7 +41,7 @@ class Program{
 	Console.WriteLine("The Largest number is: "+ large );
 }
 
-//Question1's method
+
 static int Largest( int a, int b)
 {
     if (a>b) { 
